@@ -1,0 +1,3 @@
+# The brain's raw/ folder holds immutable source material (e.g. book text) that
+# should NOT be committed — it may be large and/or copyrighted. Keep sources local.
+raw/
