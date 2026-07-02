@@ -4,7 +4,11 @@ A personal, LLM-powered wiki that grows with you. You feed it sources and ask it
 questions; the assistant does all the bookkeeping — writing pages, linking ideas,
 flagging contradictions, and keeping the knowledge base healthy over time.
 
-This repo contains the [`second-brain`](second-brain/SKILL.md) skill that powers it.
+This repo contains two skills:
+
+- [`second-brain`](second-brain/SKILL.md) — the base wiki (ingest, query, lint).
+- [`hashed-second-brain`](hashed-second-brain/SKILL.md) — the base wiki **plus** tiered
+  memory and Knowledge Compression Hashing (see [below](#variant-hashed-second-brain)).
 
 ---
 
@@ -110,6 +114,40 @@ Produces a report covering contradictions, stale content, orphan pages, missing
 
 ---
 
+## Variant: hashed-second-brain
+
+[`hashed-second-brain`](hashed-second-brain/SKILL.md) does everything above and adds a
+memory model that behaves like a brain instead of a landfill.
+
+**Knowledge Compression Hashing.** Instead of hoarding a thousand raw notes and hoping
+semantic search finds the right one, it periodically **compresses clusters of related
+memory into one dense artifact** (keep the signal, drop the noise) and **hashes it to a
+stable key** so retrieval is a *direct lookup, not a scan*. The key is derived from the
+topic's identity, not its content — so as an artifact is compressed harder over time, the
+key still resolves.
+
+**Tiered memory.** Knowledge flows through three tiers, and **retrieval cost scales with
+age**, like a human brain:
+
+| Tier | Holds | Read cost |
+|------|-------|-----------|
+| **hot** | recent, full-detail pages (days–weeks) | cheap — read first |
+| **warm** | consolidated summaries (compressed once) | medium |
+| **cold** | archived gist-only artifacts | expensive — surfaced only on explicit relevance |
+
+As memory ages it is compressed harder (detail drops, gist stays) and pushed down a tier;
+accessing an old artifact *reheats* it back toward hot. Two extra verbs drive this:
+
+- **compress / consolidate** — cluster hot pages → dense hash-addressed artifacts; fold
+  the originals into `archive/` (kept for rehydration, never deleted).
+- **age / sweep** — move stale, low-hit memory down a tier and compress it harder.
+
+Use this variant when you want the knowledge base to stay fast and small over the long
+run; use the base `second-brain` when you want every page kept at full detail.
+
+---
+
 ## Reference
 
-The full skill specification lives in [`second-brain/SKILL.md`](second-brain/SKILL.md).
+- Base skill: [`second-brain/SKILL.md`](second-brain/SKILL.md)
+- Tiered + hashed variant: [`hashed-second-brain/SKILL.md`](hashed-second-brain/SKILL.md)
