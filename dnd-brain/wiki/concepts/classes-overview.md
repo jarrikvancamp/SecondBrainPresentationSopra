@@ -3,7 +3,7 @@ title: "Classes Overview"
 tags: [class, overview, 5e]
 sources: [players-handbook-2024]
 edition: "5e (2024)"
-updated: 2026-07-02
+updated: 2026-07-07
 ---
 
 # Classes Overview
@@ -38,12 +38,12 @@ are chosen at level 3.
 | [[concepts/druid\|Druid]] | Wisdom | d8 | Intelligence, Wisdom | Full (Wisdom) |
 | [[concepts/fighter\|Fighter]] | Strength or Dexterity | d10 | Strength, Constitution | No (subclass option) |
 | [[concepts/monk\|Monk]] | Dexterity and Wisdom | d8 | Strength, Dexterity | No |
-| Paladin | Strength and Charisma | d10 | Wisdom, Charisma | Half (Charisma) |
-| Ranger | Dexterity and Wisdom | d10 | Strength, Dexterity | Half (Wisdom) |
-| Rogue | Dexterity | d8 | Dexterity, Intelligence | No (subclass option) |
-| Sorcerer | Charisma | d6 | Constitution, Charisma | Full (Charisma) |
-| Warlock | Charisma | d8 | Wisdom, Charisma | Pact Magic (Charisma) |
-| Wizard | Intelligence | d6 | Intelligence, Wisdom | Full (Intelligence) |
+| [[concepts/paladin\|Paladin]] | Strength and Charisma | d10 | Wisdom, Charisma | Half (Charisma) |
+| [[concepts/ranger\|Ranger]] | Dexterity and Wisdom | d10 | Strength, Dexterity | Half (Wisdom) |
+| [[concepts/rogue\|Rogue]] | Dexterity | d8 | Dexterity, Intelligence | No (subclass option) |
+| [[concepts/sorcerer\|Sorcerer]] | Charisma | d6 | Constitution, Charisma | Full (Charisma) |
+| [[concepts/warlock\|Warlock]] | Charisma | d8 | Wisdom, Charisma | Pact Magic (Charisma) |
+| [[concepts/wizard\|Wizard]] | Intelligence | d6 | Intelligence, Wisdom | Full (Intelligence) |
 
 > **Hit Die derivation:** d12 → 12 HP at level 1 (Barbarian); d10 → 10 HP
 > (Fighter/Paladin/Ranger); d8 → 8 HP (Bard/Cleric/Druid/Monk/Rogue/Warlock);

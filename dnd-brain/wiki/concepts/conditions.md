@@ -3,7 +3,7 @@ title: "Conditions"
 tags: [rules, conditions, status-effects]
 sources: [players-handbook-2024]
 edition: "5e (2024)"
-updated: 2026-07-02
+updated: 2026-07-07
 ---
 
 Conditions are temporary states imposed by spells, attacks, environments, or abilities that alter a creature's capabilities until the condition ends or is removed.
@@ -32,6 +32,17 @@ Conditions are temporary states imposed by spells, attacks, environments, or abi
 | **Restrained** | Speed becomes 0; attack rolls against it have Advantage; its own attack rolls and Dex saves have Disadvantage. |
 | **Stunned** | Incapacitated, can't move, can speak only falteringly; auto-fails STR and DEX saves; attacks against it have Advantage. |
 | **Unconscious** | Incapacitated, can't move or speak, unaware of surroundings; drops whatever it's holding; falls Prone; auto-fails STR and DEX saves; attacks against it have Advantage; hits within 5 ft are Critical Hits. |
+
+## Unconscious
+
+When a creature is Unconscious, it has the following effects:
+
+- It is Incapacitated, can't move, and can't speak.
+- It is unaware of its surroundings.
+- It drops whatever it's holding and falls Prone.
+- It automatically fails Strength and Dexterity saving throws.
+- Attack rolls against it have Advantage.
+- Any attack roll that hits it is a Critical Hit if the attacker is within 5 feet.
 
 ## Exhaustion (Special Condition)
 
